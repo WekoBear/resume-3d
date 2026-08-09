@@ -1,11 +1,11 @@
-# About Sen · 3D个人简历
+# Vic Xiong · 3D作品集
 
 **简体中文** · [English](README.en.md)
 
 一个基于 **React Three Fiber** 的滚动式个人3D简历。
 
 <h3 align="center">
-  🔗 <a href="https://dayinji.github.io/sen-3d-resume/">点击进入在线预览 →</a>
+  🔗 <a href="https://vicxiong.vercel.app/">点击进入在线预览 →</a>
 </h3>
 
 > 💡 **不想写代码、不想折腾环境？** 可以试试 [intro3d.com](https://intro3d.com)：一个零代码的 3D 个人主页 DIY 平台，小白也能上手，一站式解决制作与部署。相比本项目少了「眼球跟随光标」的互动，其余相对完整。想快速拥有一个类似的 3D 简历，它更省时；想完全掌控、深度定制，再用本仓库源码。
