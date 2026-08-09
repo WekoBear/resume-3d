@@ -24,15 +24,15 @@ type Lang = 'en' | 'zh'
 
 const COPY = {
   en: {
-    title: 'About Sen',
+    title: 'About Vic',
     paragraphs: [
-      "I'm Sen — a creative technologist living where code meets art. I spend my days around coding, creativity, playful interaction & design, and CG work. I love studying and combining skills across different fields — to create, and to explore more possibilities.",
+      'I am Vic Xiong, a product and experience designer with eight years of UI/UX experience. I turn user research, feedback, and product data into practical design systems and measurable improvements across complex e-commerce journeys.',
     ],
   },
   zh: {
-    title: 'About Sen',
+    title: 'About Vic',
     paragraphs: [
-      '我是 Sen——一个游走在代码与艺术之间的创意技术人。我常年和 Coding、创意、有趣的交互 & 设计、CG 创作等打交道，喜欢研究并组合不同领域的技能，来创造并探索更多可能性。',
+      '我是熊伟（Vic），一名拥有 8 年 UI/UX 经验的产品与体验设计师。我擅长从用户研究、用户反馈和上线数据中发现问题，将复杂业务转化为系统化的设计方案，并持续验证设计带来的增长与效率价值。',
     ],
   },
 }
@@ -170,12 +170,12 @@ export default function App() {
         <span className="hero-mark bl">+</span>
         <span className="hero-mark br">+</span>
         <div className="hero-meta hm-tl">
-          <span className="hm-name">Sen Zheng 郑越升</span>
-          <span>Creative Technologist</span>
+          <span className="hm-name">Vic Xiong 熊伟</span>
+          <span>Product & Experience Designer</span>
         </div>
-        <div className="hero-meta hm-tr">Portfolio — 2026</div>
-        <div className="hero-meta hm-bl">Code · Art · Play</div>
-        <div className="hero-meta hm-right">Based in Shenzhen</div>
+        <div className="hero-meta hm-tr">Portfolio — 2025</div>
+        <div className="hero-meta hm-bl">UI · UX · Growth</div>
+        <div className="hero-meta hm-right">8 Years in Experience Design</div>
       </motion.div>
 
       {/* 全屏胶片噪点蒙层（multiply 混合） */}
