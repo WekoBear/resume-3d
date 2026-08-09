@@ -20,3 +20,9 @@ tags: [组件库, 新人培训, 项目复盘]
 
 - AKULAKU 组件库使设计效率提高 **39.3%**。
 - SHEIN 交互协作与组件建设使需求交付提速约 **60%**。
+
+## 项目页面
+
+![设计团队能力项目页面 01](/works/design-capabilities/500.jpg)
+
+![设计团队能力项目页面 02](/works/design-capabilities/501.jpg)

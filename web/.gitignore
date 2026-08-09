@@ -8,10 +8,11 @@ dist-ssr
 .playwright-mcp
 *.log
 
-# 作品媒体（视频/大图）：体积大且属个人内容，不入 git。
-# 仅保留板块封面占位图（public/works/covers/），其余媒体请自行放置或走 CDN。
+# 作品媒体默认不入 git；仅纳入已经过网页尺寸优化的 JPG 项目页。
 public/works/*
-!public/works/covers/
+!public/works/*/
+public/works/*/*
+!public/works/*/*.jpg
 
 # 压缩脚本日志
 scripts/compress-media.log

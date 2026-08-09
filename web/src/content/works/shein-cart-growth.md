@@ -23,3 +23,29 @@ SHEIN 从独立站向多品类平台发展后，购物车在筛选、凑单、�
 - 转化率提升 **35%**。
 - GMV 提升 **12%**。
 - 项目获得个人绩效 **A 评级**。
+
+## 项目页面
+
+![购物车优化项目页面 01](/works/shein-cart-growth/100.jpg)
+
+![购物车优化项目页面 02](/works/shein-cart-growth/101.jpg)
+
+![购物车优化项目页面 03](/works/shein-cart-growth/102.jpg)
+
+![购物车优化项目页面 04](/works/shein-cart-growth/103.jpg)
+
+![购物车优化项目页面 05](/works/shein-cart-growth/104.jpg)
+
+![购物车优化项目页面 06](/works/shein-cart-growth/105.jpg)
+
+![购物车优化项目页面 07](/works/shein-cart-growth/106.jpg)
+
+![购物车优化项目页面 08](/works/shein-cart-growth/107.jpg)
+
+![购物车优化项目页面 09](/works/shein-cart-growth/108.jpg)
+
+![购物车优化项目页面 10](/works/shein-cart-growth/109.jpg)
+
+![购物车优化项目页面 11](/works/shein-cart-growth/110.jpg)
+
+![购物车优化项目页面 12](/works/shein-cart-growth/111.jpg)

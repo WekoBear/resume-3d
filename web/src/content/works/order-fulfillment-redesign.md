@@ -21,3 +21,27 @@ tags: [订单, 物流, 履约体验]
 - 履约相关客诉下降 **60%**。
 - 用户自助催派能力上线后，日均减少约 **320 万次**重复客询。
 - 催发货客询在二级问题类型中的占比下降。
+
+## 项目页面
+
+![履约场景改版项目页面 01](/works/order-fulfillment-redesign/300.jpg)
+
+![履约场景改版项目页面 02](/works/order-fulfillment-redesign/301.jpg)
+
+![履约场景改版项目页面 03](/works/order-fulfillment-redesign/302.jpg)
+
+![履约场景改版项目页面 04](/works/order-fulfillment-redesign/303.jpg)
+
+![履约场景改版项目页面 05](/works/order-fulfillment-redesign/304.jpg)
+
+![履约场景改版项目页面 06](/works/order-fulfillment-redesign/305.jpg)
+
+![履约场景改版项目页面 07](/works/order-fulfillment-redesign/306.jpg)
+
+![履约场景改版项目页面 08](/works/order-fulfillment-redesign/307.jpg)
+
+![履约场景改版项目页面 09](/works/order-fulfillment-redesign/308.jpg)
+
+![履约场景改版项目页面 10](/works/order-fulfillment-redesign/309.jpg)
+
+![履约场景改版项目页面 11](/works/order-fulfillment-redesign/310.jpg)
