@@ -1295,6 +1295,13 @@ canvas {
 .wk-md p {
   margin: 0 0 1.1em;
 }
+.wk-md p:has(> img) {
+  width: min(1120px, calc(100vw - clamp(48px, 16vw, 240px)));
+  max-width: none;
+  margin: clamp(24px, 4vh, 44px) 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 .wk-md a {
   color: #ffd9b3;
   text-decoration: none;

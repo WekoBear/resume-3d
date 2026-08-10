@@ -180,7 +180,15 @@ function WorkDetail({
 
           {doc && doc.body ? (
             <div className="wk-md">
-              <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                  img: ({ alt, ...props }) => (
+                    <img {...props} alt={alt || ''} loading="lazy" decoding="async" />
+                  ),
+                }}
+              >
                 {doc.body}
               </ReactMarkdown>
             </div>

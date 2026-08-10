@@ -1,4 +1,4 @@
-// 作品集数据（双语）。5 大板块 → 点击展开作品详情。
+// 作品集数据（双语）。点击项目可展开作品详情。
 // 纯数据驱动：增删板块 / 作品只改本文件，Works.jsx 仅负责渲染。
 //
 // 板块字段：
@@ -65,65 +65,71 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
     countLabel: (n) => `${n} 件作品`,
     sections: [
       {
-        id: 'ad',
+        id: 'growth',
         no: '01',
-        title: '广告项目',
-        tagline: '坏打印机工作室',
+        title: '设计助力增长',
+        tagline: 'SHEIN · 结算体验',
         items: [
-          { name: '谁在弹古琴', meta: '互动项目', slug: 'guqin' },
-          { name: '新加坡联合早报 · 校园时光机', meta: '互动项目', slug: 'time-machine' },
-          { name: '动画合集', meta: '动画', slug: 'animation-collection' },
-          { name: '其他作品', slug: 'other-works' },
+          {
+            name: '购物车优化增长专项',
+            meta: '独立交互设计',
+            tags: ['增长设计', '体验优化'],
+            slug: 'shein-cart-growth',
+          },
+          {
+            name: '一键购设计',
+            meta: '0–1 体验设计',
+            tags: ['创新方案', '结算链路'],
+            slug: 'one-click-buy',
+          },
         ],
-        awards: ['虎啸奖', 'FWA', 'Awwwards'],
       },
       {
-        id: 'maker',
+        id: 'efficiency',
         no: '02',
-        title: '自媒体',
-        tagline: '23 万关注 ｜ 年更博主',
+        title: '设计提升效率',
+        tagline: 'SHEIN · 履约与账户体验',
         items: [
           {
-            name: '我把工作室的玻璃墙改造成了游戏机',
-            meta: '1700 万 播放',
-            tags: ['B站每周必看', 'B站热搜'],
-            slug: 'glass-wall-arcade',
+            name: '履约场景改版设计',
+            meta: '订单与物流体验',
+            tags: ['数据分析', '效率设计'],
+            slug: 'order-fulfillment-redesign',
           },
           {
-            name: '我把代码写入狗狗的衣服里',
-            meta: '900 万 播放',
-            tags: ['微博 / 抖音 / B站 三平台热搜榜'],
-            slug: 'dog-code-clothes',
+            name: '登录注册流程优化',
+            meta: '链路重塑',
+            tags: ['用户调研', '转化提升'],
+            slug: 'login-registration-optimization',
           },
-          {
-            name: '我把 Switch 放大十倍，做成了智能猫窝',
-            meta: '500 万 播放',
-            tags: ['B站每周必看'],
-            slug: 'switch-cat-house',
-          },
-          { name: '我们在80年代的红白机游戏里结婚啦！！', slug: 'retro-game-wedding' },
         ],
-        footer: '3D 建模 · 3D 打印 · PCB 设计 · 嵌入式开发 · 软件开发 · 动画包装',
       },
       {
-        id: 'product',
+        id: 'campaigns',
         no: '03',
-        title: '产品',
-        tagline: 'ZOOOP',
+        title: '活动页面',
+        tagline: 'Insta360 · 营销与互动',
         items: [
-          { name: 'ZOOOP', meta: 'AI 原生创作平台', link: 'https://zooop.ai/', slug: 'zooop' },
+          {
+            name: '活动落地页设计',
+            meta: '分享赚积分 · 全景活动游戏',
+            tags: ['UI/UX', '互动设计'],
+            slug: 'campaign-pages',
+          },
         ],
       },
       {
-        id: 'graphics',
+        id: 'capabilities',
         no: '04',
-        title: '个人业余作品',
-        tagline: 'Raymarching · WebGL · Blender',
+        title: '其他能力',
+        tagline: '团队影响力与设计体系',
         items: [
-          { name: 'Raymarching', slug: 'raymarching' },
-          { name: 'WebGL', slug: 'webgl' },
-          { name: 'Blender', slug: 'blender' },
-          { name: '其他业余作品', slug: 'other-side-works' },
+          {
+            name: '设计团队能力建设',
+            meta: '新人培训 · 项目复盘 · 组件库',
+            tags: ['DesignOps', '知识分享'],
+            slug: 'design-capabilities',
+          },
         ],
       },
     ],
@@ -141,65 +147,71 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
     countLabel: (n) => `${n} works`,
     sections: [
       {
-        id: 'ad',
+        id: 'growth',
         no: '01',
-        title: 'Advertising',
-        tagline: 'HOTSAR · Bad Printer',
+        title: 'Design for Growth',
+        tagline: 'SHEIN · Checkout Experience',
         items: [
-          { name: 'Who’s Talking About Guqin', meta: 'Interactive', slug: 'guqin' },
-          { name: 'Lianhe Zaobao · Campus Time Machine', meta: 'Interactive', slug: 'time-machine' },
-          { name: 'Animation Reel', meta: 'Animation', slug: 'animation-collection' },
-          { name: 'Other works', slug: 'other-works' },
+          {
+            name: 'Cart Growth Redesign',
+            meta: 'Lead interaction design',
+            tags: ['Growth', 'UX'],
+            slug: 'shein-cart-growth',
+          },
+          {
+            name: 'One-click Purchase',
+            meta: '0–1 experience design',
+            tags: ['Innovation', 'Checkout'],
+            slug: 'one-click-buy',
+          },
         ],
-        awards: ['Tiger Roar', 'FWA', 'Awwwards'],
       },
       {
-        id: 'maker',
+        id: 'efficiency',
         no: '02',
-        title: 'Content Creator',
-        tagline: '230K followers',
+        title: 'Design for Efficiency',
+        tagline: 'SHEIN · Fulfillment & Account',
         items: [
           {
-            name: '“I Turned the Studio’s Glass Wall into a Game Console”',
-            meta: '17M views',
-            tags: ['Bilibili Weekly Picks', 'Bilibili Trending'],
-            slug: 'glass-wall-arcade',
+            name: 'Fulfillment Journey Redesign',
+            meta: 'Orders & logistics',
+            tags: ['Data', 'Efficiency'],
+            slug: 'order-fulfillment-redesign',
           },
           {
-            name: '“I Wrote Code into My Dog’s Clothes”',
-            meta: '9M views',
-            tags: ['Trending on Weibo / Douyin / Bilibili'],
-            slug: 'dog-code-clothes',
+            name: 'Login & Registration Optimization',
+            meta: 'Journey redesign',
+            tags: ['Research', 'Conversion'],
+            slug: 'login-registration-optimization',
           },
-          {
-            name: '“I Made a 10× Switch into a Smart Cat House”',
-            meta: '5M views',
-            tags: ['Bilibili Weekly Picks'],
-            slug: 'switch-cat-house',
-          },
-          { name: '“We Got Married in an 80s Famicom Game!!”', slug: 'retro-game-wedding' },
         ],
-        footer: 'Tech: 3D modeling · 3D printing · PCB design · embedded · software · motion graphics',
       },
       {
-        id: 'product',
+        id: 'campaigns',
         no: '03',
-        title: 'Products',
-        tagline: 'ZOOOP',
+        title: 'Campaign Pages',
+        tagline: 'Insta360 · Marketing & Interaction',
         items: [
-          { name: 'ZOOOP', meta: 'AI-native creation platform', link: 'https://zooop.ai/', slug: 'zooop' },
+          {
+            name: 'Campaign Landing Pages',
+            meta: 'Referral points · 360 campaign game',
+            tags: ['UI/UX', 'Interaction'],
+            slug: 'campaign-pages',
+          },
         ],
       },
       {
-        id: 'graphics',
+        id: 'capabilities',
         no: '04',
-        title: 'Side Projects',
-        tagline: 'Raymarching · WebGL · Blender',
+        title: 'Other Capabilities',
+        tagline: 'Design systems & team impact',
         items: [
-          { name: 'Raymarching', slug: 'raymarching' },
-          { name: 'WebGL', slug: 'webgl' },
-          { name: 'Blender', slug: 'blender' },
-          { name: 'Other side projects', slug: 'other-side-works' },
+          {
+            name: 'Design Team Enablement',
+            meta: 'Mentoring · Reviews · Component library',
+            tags: ['DesignOps', 'Sharing'],
+            slug: 'design-capabilities',
+          },
         ],
       },
     ],
@@ -209,10 +221,7 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
 // 板块配图（横向画廊每张卡片左侧的整高封面）。放到 public/works/covers/ 下。
 // 缺图时左栏用大编号渐变占位，放入图片后自动点亮。
 export const SECTION_COVERS: Record<string, string> = {
-  ad: `${import.meta.env.BASE_URL}works/covers/ad.jpg`,
-  maker: `${import.meta.env.BASE_URL}works/covers/maker.jpg`,
-  product: `${import.meta.env.BASE_URL}works/covers/product.jpg`,
-  graphics: `${import.meta.env.BASE_URL}works/covers/graphics.jpg`,
+  // 个人项目封面待补充；缺图时自动使用编号渐变占位。
 }
 
 // 统计一个板块的作品数（items 或 groups 求和），用于索引行 hover 显示
