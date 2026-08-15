@@ -15,3 +15,7 @@ npm run dev   # http://localhost:5173
 ## Git workflow
 
 This repository is maintained by one person. Unless the user explicitly requests a feature branch or pull request, commit completed work directly to `main` and push `origin/main`. Do not create a separate branch by default.
+
+## Browser workflow
+
+Use the Codex in-app browser first for all web previews, debugging, screenshots, and interaction checks. Do not open Chrome, Safari, or another local desktop browser unless the user explicitly requests it.
