@@ -292,6 +292,10 @@ function Man2({
   const camScl = useRef(new THREE.Vector3())
   const paraEuler = useRef(new THREE.Euler(0, 0, 0, 'YXZ'))
   const paraQuat = useRef(new THREE.Quaternion())
+  const focusLookMatrix = useRef(new THREE.Matrix4())
+  const focusLookQuat = useRef(new THREE.Quaternion())
+  const focusOffsetQuat = useRef(new THREE.Quaternion())
+  const focusUp = useRef(new THREE.Vector3(0, 1, 0))
 
   useFrame((_, dt) => {
     const a = 1 - Math.pow(cam.damping, dt)
@@ -441,6 +445,24 @@ function Man2({
       if (isMobile.current) tmpVec.current.multiplyScalar(cam.mobilePullback)
       tmpVec.current.add(focusRef.current)
       camera.position.copy(tmpVec.current)
+
+      // 履历镜头保留 glb 的位置/FOV/帧节奏，但朝向实时跟随当前 focus-*。
+      // 旧 CameraAction 是按旧脸与旧贴纸构图制作的；替换人物后只改 Blender 的
+      // focus 空对象只能改变景深，无法让贴纸回到镜头内。这里让焦点保持在画面
+      // 左侧约 35%，沿用原设计给右侧履历文字预留的空间。
+      const focusTrack = inWorks
+        ? 0
+        : THREE.MathUtils.smoothstep(frame, 12, FRAMES_PER_NODE)
+      if (focusTrack > 0) {
+        focusLookMatrix.current.lookAt(camera.position, focusRef.current, focusUp.current)
+        focusLookQuat.current.setFromRotationMatrix(focusLookMatrix.current)
+        focusOffsetQuat.current.setFromAxisAngle(
+          focusUp.current,
+          THREE.MathUtils.degToRad(-5)
+        )
+        focusLookQuat.current.premultiply(focusOffsetQuat.current)
+        camQuat.current.slerp(focusLookQuat.current, focusTrack)
+      }
       camera.quaternion.multiplyQuaternions(paraQuat.current, camQuat.current)
       // 移动端「时间轴阶段」把镜头整体左移，让主体从满宽文字后错开。
       // 权重：从 Hero 渐入(s: -0.8→0.3)、进入作品区随 smoothOff 渐出 → 无跳变。
